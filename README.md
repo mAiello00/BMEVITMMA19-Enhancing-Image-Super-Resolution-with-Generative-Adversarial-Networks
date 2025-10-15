@@ -7,7 +7,7 @@ Team members:
 - Thipphsone Phaxy - FQ9TSP
 
 ## Project description
-This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN and ESRGAN in PyTorch framework. The goal is to generate higher resolution images from lower resolution images. Our overarching goal is to compare traditional interpolation methods such as bilinear and bicubic to GAN-based methods. 
+This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN and ESRGAN in PyTorch framework. The goal is to generate higher resolution images from lower resolution images. Our overarching goal is to compare traditional interpolation methods such as bilinear and bicubic to GAN-based methods. We've taken special importance on implementing the SRGAN network, with comments to help to understand the network architecture. 
 
 ## Datasets overview
 ### Div2k
@@ -18,7 +18,9 @@ Div2k is a large image dataset specifically for the ISR problem domain. It is in
 It provides x2, x3 and x4 downsized images using bicubic and "unknown" methods.
 
 ### CelebA
-CelebA is a large-scale face attributes dataset with more than 200K celebrity images. 
+CelebA is a large-scale face attributes dataset with more than 200K celebrity images.
+
+
 
 
 ## Explanation of the file structure in this repository

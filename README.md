@@ -16,6 +16,7 @@ Div2k is a large image dataset specifically for the ISR problem domain. It is in
 - `validation` - 100
 - `test` - 100
 It provides x2, x3 and x4 downsized images using bicubic and "unknown" methods.
+This dataset has been uploaded to `huggingface` library. This simplifies the process of training the model significantly. 
 
 ### CelebA
 CelebA is a large-scale face attributes dataset with more than 200K celebrity images.

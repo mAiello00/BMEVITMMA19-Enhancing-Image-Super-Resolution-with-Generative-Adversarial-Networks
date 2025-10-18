@@ -1,5 +1,5 @@
 # BMEVITMMA19-Enhancing-Image-Super-Resolution-with-Generative-Adversarial-Networks
-BMEVITMMA19 task: SRGAN and ESRGAN implementation
+BMEVITMMA19 task: SRGAN implementation
 
 Team members:
 - Marco Aiello     - J9PDZZ

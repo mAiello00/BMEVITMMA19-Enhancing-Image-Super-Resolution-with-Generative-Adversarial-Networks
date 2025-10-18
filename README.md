@@ -11,16 +11,20 @@ This project is a study of the Image Super Resolution (ISR) domain and will impl
 
 ## 2. Datasets overview
 ### Div2k
-Div2k is a large high quality image dataset specifically for the ISR problem domain. It is introduced in [this](https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Agustsson_NTIRE_2017_Challenge_CVPR_2017_paper.pdf) paper and collected to evaluate and benchmark ISR solution submissions for a competition. This dataset is a collection of 1000 2K resolution (meaning pixels on at least one of the axes are 2K) images divided into:
-- `train` - 600
+Div2k is a large high quality image dataset specifically for the ISR problem domain. It is introduced in [NTIRE 2017 Challenge on Single Image Super-Resolution: Dataset and Study](https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Agustsson_NTIRE_2017_Challenge_CVPR_2017_paper.pdf). It is also one of the suggested datasets for the assignment.
+
+This dataset is a collection of 1000 2K resolution images divided into:
+- `train` - 800
 - `validation` - 100
 - `test` - 100
 It provides x2, x3 and x4 downsized images using bicubic and "unknown" methods.
-This dataset has been uploaded to `huggingface` library. This simplifies the process of training the model significantly.
-A subset of the dataset was used for training purposes (total of 400 low-res/high-res pairs).
+
+A subset of 800 images from the 'train' set was used in this implementation for training purposes. This was done for two reasons. This subset was uploaded to Huggingface and is remotely downloaded when the solution is ran.
+1. To avoid Huggingface download limits we ran into while preparing the dataset
+2. Reduce the computational resources required for training the models over high epoch counts. This arose from another issue we ran into where Google Colab restricted our GPU useage during one of our earlier tests.
 
 ### CelebA
-CelebA is a large-scale face attributes dataset with more than 200K celebrity images.
+CelebA is a large-scale face attributes dataset with more than 200K celebrity images. It was not used for this implementation. This is the other suggested dataset for the assignment. It will be used in our ESRGAN implementation.
 
 ### Details on how the `datasets` was downloaded and used
 The Div2K data was first uploaded to `huggingface` repository by `@mAiello00` which can be used by `datasets` library to download locally. The huggingface authorization token that is part of the notebook will allow access to this dataset. 

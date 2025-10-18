@@ -41,7 +41,7 @@ The `jupyter` notebook will be uploaded. To open the notebook in Colab, please c
 
 Or you could open the notebook via this badge:
 
-[![Open In Colab](https://colab.research.google.com/drive/13amKtIOEObSN3Ce3_FMS2Mia3RFJrLeb?usp=sharing)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13amKtIOEObSN3Ce3_FMS2Mia3RFJrLeb?usp=sharing)
 
 ## Useful links
 

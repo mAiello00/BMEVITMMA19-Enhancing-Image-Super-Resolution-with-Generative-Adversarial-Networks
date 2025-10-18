@@ -7,7 +7,7 @@ Team members:
 - Thipphsone Phaxy - FQ9TSP
 
 ## 1.Project description
-This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN and ESRGAN in PyTorch framework. The goal is to generate higher resolution images from lower resolution images. Our overarching goal is to compare traditional interpolation methods such as bilinear and bicubic to GAN-based methods. We've taken special importance on implementing the SRGAN network, with comments to help to understand the network architecture.
+This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN and ESRGAN using the PyTorch framework. The goal is to generate higher resolution images from lower resolution images. Our overarching goal is to compare traditional interpolation methods such as bilinear and bicubic to GAN-based methods. We've taken special importance on implementing the SRGAN network, with comments to help to understand the network architecture.
 
 ## 2. Datasets overview
 ### Div2k
@@ -53,6 +53,8 @@ The `jupyter` notebook will be uploaded. To open the notebook in Colab, please c
 Or you could open the notebook via this badge:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13amKtIOEObSN3Ce3_FMS2Mia3RFJrLeb?usp=sharing)
+
+Running the cells in order (top-to-bottom) will produce the expected results.
 
 ## Useful links
 

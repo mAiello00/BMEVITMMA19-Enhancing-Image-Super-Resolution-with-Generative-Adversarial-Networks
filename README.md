@@ -22,7 +22,7 @@ This dataset has been uploaded to `huggingface` library. This simplifies the pro
 CelebA is a large-scale face attributes dataset with more than 200K celebrity images.
 
 ### Details on how the `datasets` was downloaded and used
-The Div2K data was first uploaded to `huggingface` repository by `@mAiello00` which can be used by `datasets` library to download locally. For more information on how to upload the dataset to huggingface, please check this [link](https://huggingface.co/docs/datasets/en/share) For the notebook, we've provided huggingface token authorization for downloading the dataset. 
+The Div2K data was first uploaded to `huggingface` repository by `@mAiello00` which can be used by `datasets` library to download locally. For more information on how to upload the dataset to huggingface, please check this [link](https://huggingface.co/docs/datasets/en/share). For the notebook, we've provided huggingface token authorization for downloading the dataset. 
 
 For downloading the dataset to local instance (on Colab), we've used:
 ```python

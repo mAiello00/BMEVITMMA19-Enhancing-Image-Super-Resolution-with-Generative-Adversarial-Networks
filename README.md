@@ -19,7 +19,7 @@ This dataset is a collection of 1000 2K resolution images divided into:
 - `test` - 100
 It provides x2, x3 and x4 downsized images using bicubic and "unknown" methods.
 
-A subset of 800 images from the 'train' set was used in this implementation for training purposes. This was done for two reasons. This subset was uploaded to Huggingface and is remotely downloaded when the solution is ran.
+A subset of 400 image pairs from the 'train' set was used in this implementation for training purposes. This was done for two reasons. This subset was uploaded to Huggingface and is remotely downloaded when the solution is ran.
 1. To avoid Huggingface download limits we ran into while preparing the dataset
 2. Reduce the computational resources required for training the models over high epoch counts. This arose from another issue we ran into where Google Colab restricted our GPU useage during one of our earlier tests.
 

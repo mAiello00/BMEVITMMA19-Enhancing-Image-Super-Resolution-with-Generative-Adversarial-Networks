@@ -48,14 +48,8 @@ The trained network is able to output following image for super resolution image
 
 
 ## Instructions to run the solution
-The `jupyter` notebook will be uploaded. To open the notebook in Colab, please change the notebook's link `github.io/your/notebook/link` to `githubtocolab.io/your/notebook/link`. 
+The `jupyter` notebook will be uploaded. Download the file titled 'SRGAN Implementation'. Pressing 'Run' on each of the cells in order (top-to-bottom) will produce the expected results.
 
-Or you could open the notebook via this badge:
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13amKtIOEObSN3Ce3_FMS2Mia3RFJrLeb?usp=sharing)
-
-Running the cells in order (top-to-bottom) will produce the expected results.
-
-## Useful links
+## SRGAN Paper
 
 1. [SRGAN Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.pdf)

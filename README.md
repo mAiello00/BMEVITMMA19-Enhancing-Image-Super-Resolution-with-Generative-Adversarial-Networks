@@ -35,11 +35,14 @@ low_res_dir  = os.path.join(dataset_dir, "DIV2K_train_LR_bicubic_X2", "DIV2K_tra
 ```
 After running a code snippet above, the `huggingface_hub` library would download the dataset and return the `high_res_dir` and `low_res_dir`. For ISR problem, high resolution images correspond to ground truths and low resolution images are inputs to the network.
 
-## Explanation of the file structure in this repository
-- There should be the `baseline`
-- There should be the `SRGAN`
-- 
 
 ## Instructions to run the solution
+The `jupyter` notebook will be uploaded. To open the notebook in Colab, please change the notebook's link `github.io/your/notebook/link` to `githubtocolab.io/your/notebook/link`. 
+
+Or you could open the notebook via this badge:
+
+[![Open In Colab](https://colab.research.google.com/drive/13amKtIOEObSN3Ce3_FMS2Mia3RFJrLeb?usp=sharing)
 
 ## Useful links
+
+1. [SRGAN Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.pdf)

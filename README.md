@@ -24,9 +24,16 @@ CelebA is a large-scale face attributes dataset with more than 200K celebrity im
 ### Details on how the `datasets` was downloaded and used
 The Div2K data was first uploaded to `huggingface` repository by `@mAiello00` which can be used by `datasets` library to download locally. For the notebook, we've provided huggingface token authorization for downloading the dataset. 
 
-
-
-
+For downloading the dataset to local instance (on Colab), we've used:
+```{python}
+import os
+from huggingface_hub import snapshot_download
+dataset_dir = snapshot_download(repo_id="mAiello00/DIV2K", repo_type="dataset")
+print("Dataset contains: ", os.listdir(dataset_dir))
+high_res_dir = os.path.join(dataset_dir, "DIV2K_train_HR")
+low_res_dir  = os.path.join(dataset_dir, "DIV2K_train_LR_bicubic_X2", "DIV2K_train_LR_bicubic", "X2") # Downscaled 2 times images
+```
+After running a code snippet above, the `huggingface_hub` library would download the dataset and return the `high_res_dir` and `low_res_dir`. For ISR problem, high resolution images correspond to ground truths and low resolution images are inputs to the network.
 
 ## Explanation of the file structure in this repository
 - There should be the `baseline`

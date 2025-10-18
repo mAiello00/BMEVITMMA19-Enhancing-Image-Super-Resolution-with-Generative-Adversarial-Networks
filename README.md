@@ -6,10 +6,10 @@ Team members:
 - Mend-Amar Badral - HSTV4I
 - Thipphsone Phaxy - FQ9TSP
 
-## Project description
+## 1.Project description
 This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN and ESRGAN in PyTorch framework. The goal is to generate higher resolution images from lower resolution images. Our overarching goal is to compare traditional interpolation methods such as bilinear and bicubic to GAN-based methods. We've taken special importance on implementing the SRGAN network, with comments to help to understand the network architecture.
 
-## Datasets overview
+## 2. Datasets overview
 ### Div2k
 Div2k is a large high quality image dataset specifically for the ISR problem domain. It is introduced in [this](https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Agustsson_NTIRE_2017_Challenge_CVPR_2017_paper.pdf) paper and collected to evaluate and benchmark ISR solution submissions for a competition. This dataset is a collection of 1000 2K resolution (meaning pixels on at least one of the axes are 2K) images divided into:
 - `train` - 800
@@ -34,6 +34,12 @@ high_res_dir = os.path.join(dataset_dir, "DIV2K_train_HR")
 low_res_dir  = os.path.join(dataset_dir, "DIV2K_train_LR_bicubic_X2", "DIV2K_train_LR_bicubic", "X2") # Downscaled 2 times images
 ```
 After running a code snippet above, the `huggingface_hub` library would download the dataset and return the `high_res_dir` and `low_res_dir`. For ISR problem, high resolution images correspond to ground truths and low resolution images are inputs to the network.
+
+## 3. Results
+
+The trained network is able to output following image for super resolution image task, meaning upsampled the low resolution image.
+
+![image](srgan_output.png)
 
 
 ## Instructions to run the solution

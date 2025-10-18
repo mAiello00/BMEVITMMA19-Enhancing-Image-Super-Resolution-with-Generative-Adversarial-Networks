@@ -12,17 +12,18 @@ This project is a study of the Image Super Resolution (ISR) domain and will impl
 ## 2. Datasets overview
 ### Div2k
 Div2k is a large high quality image dataset specifically for the ISR problem domain. It is introduced in [this](https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Agustsson_NTIRE_2017_Challenge_CVPR_2017_paper.pdf) paper and collected to evaluate and benchmark ISR solution submissions for a competition. This dataset is a collection of 1000 2K resolution (meaning pixels on at least one of the axes are 2K) images divided into:
-- `train` - 800
+- `train` - 600
 - `validation` - 100
 - `test` - 100
 It provides x2, x3 and x4 downsized images using bicubic and "unknown" methods.
 This dataset has been uploaded to `huggingface` library. This simplifies the process of training the model significantly.
+A subset of the dataset was used for training purposes (total of 400 low-res/high-res pairs).
 
 ### CelebA
 CelebA is a large-scale face attributes dataset with more than 200K celebrity images.
 
 ### Details on how the `datasets` was downloaded and used
-The Div2K data was first uploaded to `huggingface` repository by `@mAiello00` which can be used by `datasets` library to download locally. For more information on how to upload the dataset to huggingface, please check this [link](https://huggingface.co/docs/datasets/en/share). For the notebook, we've provided huggingface token authorization for downloading the dataset. 
+The Div2K data was first uploaded to `huggingface` repository by `@mAiello00` which can be used by `datasets` library to download locally. The huggingface authorization token that is part of the notebook will allow access to this dataset. 
 
 For downloading the dataset to local instance (on Colab), we've used:
 ```python

@@ -66,7 +66,7 @@ Epoch number was set to 60 due to us running into GPU limitations on Google Cola
 Used to load the dataset from Huggingace. As previously mentioned, the dataset we used was uploaded to Huggingface (repository mAiello00/DIV2K). This was done because Google Colab will not save these file between sessions. Saves the High Resolution and Low Resolution datasets.
 
 #### Cell(s) 7
-# ImageDataset class
+##### ImageDataset class
 This class is used to represent the data we train the Generator and Discrimintaor with. It uses the list of high-resolution and low-resolution images, converting them into tensors and taking a random crop of each. A crop size of 96x96 pixels was used. This is done to reduce computational requirements during training as well as improve localized upscaling.
 
 #### Cell(s) 8
@@ -77,7 +77,7 @@ Instanciates ImageDataset
 This class is used to represent the Residual Block architecture described in the papaer. The structure described is k3n64s1
 
 #### Cell 10
-# UpsamplingBlock class
+##### UpsamplingBlock class
 This class is used to represent the Upsampling Block architecture described in the paper. The structure is k3n256s1.
 
 #### Cell 11
@@ -85,7 +85,7 @@ This class is used to represent the Upsampling Block architecture described in t
 This class is used to represent the Generator architecture described in the paper.
 
 #### Cell 12
-# Discriminator class
+##### Discriminator class
 This class is used to represent the Dicriminator architecture described in the paper.
 
 #### Cell 13

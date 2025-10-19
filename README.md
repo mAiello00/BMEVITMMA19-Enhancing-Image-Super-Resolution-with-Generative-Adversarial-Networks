@@ -8,7 +8,7 @@ Team members:
 - Mend-Amar Badral - HSTV4I
 - Thipphsone Phaxy - FQ9TSP
 
-## 1.Project description
+## 1. Project description
 This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN (and later ESRGAN) using the PyTorch framework. The architecture to be implemented is outlined in [SRGAN Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.pdf). 
 
 The primary challenge was to implement the Generator, Discriminator, and Residual Block architecture outlined in the SRGAN paper.
@@ -72,29 +72,29 @@ This class is used to represent the data we train the Generator and Discrimintao
 #### Cell(s) 8
 Instanciates ImageDataset 
 
-#### Cell 9
+#### Cell(s) 9
 ##### ResidualBlock class
 This class is used to represent the Residual Block architecture described in the papaer. The structure described is k3n64s1
 
-#### Cell 10
+#### Cell(s) 10
 ##### UpsamplingBlock class
 This class is used to represent the Upsampling Block architecture described in the paper. The structure is k3n256s1.
 
-#### Cell 11
+#### Cell(s) 11
 ##### Generator class
 This class is used to represent the Generator architecture described in the paper.
 
-#### Cell 12
+#### Cell(s) 12
 ##### Discriminator class
-This class is used to represent the Dicriminator architecture described in the paper.
+This class is used to represent the Discriminator architecture described in the paper.
 
-#### Cell 13
-Defines the loss functions used in the training loop. Binary Cross-Entropy (BCE) is used for 'Adversarial Loss'. Mean Square Error (MSE) is used in combination with VGG19
+#### Cell(s) 13
+Defines the loss functions used in the training loop. Binary Cross-Entropy (BCE) is used for 'Adversarial Loss'. Mean Square Error (MSE) is used in combination with VGG19 for 'Perceptual Loss.'
 
-#### Cell 14
+#### Cell(s) 14
 This is the training loop. It alternates between training the Generator and Discriminator. The Discriminator learns to distinguish between real high-resolution images and those created by the Generator. The Generator learns to create images that appear to be real to the Discriminator. The Generator's loss is measured with MSE and VGG19 feature maps. The result is that the generator slowly learns to create more realistic images.
 
-#### Cell 15
+#### Cell(s) 15
 Displays a random set of 4 images. Done so we can see how well the Generator can upscale the images.
 
 ## 4. Results

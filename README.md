@@ -50,7 +50,7 @@ After running a code snippet above, the `huggingface_hub` library would download
 
 ## 3. Repository Files
 
-### 'SRGAN Implementation.'
+### SRGAN Implementation.ipynb
 This file contains the entirety of the solution for the assignment. The function of each cell in the notebook is as follows:
 
 #### Cell(s) 1 - 3

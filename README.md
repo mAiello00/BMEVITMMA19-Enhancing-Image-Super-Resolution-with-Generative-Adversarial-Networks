@@ -95,7 +95,7 @@ Defines the loss functions used in the training loop. Binary Cross-Entropy (BCE)
 This is the training loop. It alternates between training the Generator and Discriminator. The Discriminator learns to distinguish between real high-resolution images and those created by the Generator. The Generator learns to create images that appear to be real to the Discriminator. The Generator's loss is measured with MSE and VGG19 feature maps. The result is that the generator slowly learns to create more realistic images.
 
 #### Cell(s) 15
-Displays a random set of 4 images. Done so we can see how well the Generator can upscale the images.
+Displays a random set of 3 images. Done so we can see how well the Generator can upscale the images.
 
 ## 4. Results
 

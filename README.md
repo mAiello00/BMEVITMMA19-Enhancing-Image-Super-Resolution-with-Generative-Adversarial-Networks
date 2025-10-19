@@ -11,7 +11,7 @@ Team members:
 ## 1. Project description
 This project is a study of the Image Super Resolution (ISR) domain and will implement GAN-based models, particularily SRGAN (and later ESRGAN) using the PyTorch framework. The architecture to be implemented is outlined in [SRGAN Paper](https://openaccess.thecvf.com/content_cvpr_2017/papers/Ledig_Photo-Realistic_Single_Image_CVPR_2017_paper.pdf). 
 
-The primary challenge was to implement the Generator, Discriminator, and Residual Block architecture outlined in the SRGAN paper.
+The primary challenge was to implement the Generator, Discriminator, and Residual Block architecture outlined in the SRGAN paper, and then train them.
 
 The goal is to generate higher resolution images from lower resolution images, and compare traditional interpolation methods such as bilinear and bicubic to GAN-based methods.
 

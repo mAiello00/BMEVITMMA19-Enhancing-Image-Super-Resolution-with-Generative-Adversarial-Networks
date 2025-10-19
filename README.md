@@ -73,7 +73,7 @@ This class is used to represent the data we train the Generator and Discrimintao
 Instanciates ImageDataset 
 
 #### Cell 9
-# ResidualBlock class
+##### ResidualBlock class
 This class is used to represent the Residual Block architecture described in the papaer. The structure described is k3n64s1
 
 #### Cell 10
@@ -81,7 +81,7 @@ This class is used to represent the Residual Block architecture described in the
 This class is used to represent the Upsampling Block architecture described in the paper. The structure is k3n256s1.
 
 #### Cell 11
-# Generator class
+##### Generator class
 This class is used to represent the Generator architecture described in the paper.
 
 #### Cell 12

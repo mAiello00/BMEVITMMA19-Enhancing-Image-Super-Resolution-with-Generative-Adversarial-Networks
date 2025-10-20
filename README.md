@@ -27,9 +27,9 @@ It provides x2, x3 and x4 downsized images using bicubic and "unknown" methods.
 
 A subset of 400 image pairs from the 'train' set was used in this implementation for training purposes. This was done for two reasons:
 1. To avoid Huggingface download limits we ran into while preparing the dataset
-2. Reduce the computational resources required for training the models over high epoch counts. This arose from another issue we ran into where Google Colab restricted our GPU useage during one of our earlier tests.
+2. Reduce the computational resources required for training the models over high epoch counts. This arose from another issue we ran into where Google Colab restricted our GPU usage during one of our earlier tests.
 
-This subset was uploaded to Huggingface and is remotely downloaded when the solution is ran.
+This subset was uploaded to Huggingface and is remotely downloaded when the solution is ran. The notebook shows the example image from this dataset and how the crop of each image is taken for training.
 
 ### CelebA
 CelebA is a large-scale face attributes dataset with more than 200K celebrity images. It was not used for this implementation. This is the other suggested dataset for the assignment. It will be used in our ESRGAN implementation.

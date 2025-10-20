@@ -70,31 +70,40 @@ Used to load the dataset from Huggingace. As previously mentioned, the dataset w
 This class is used to represent the data we train the Generator and Discrimintaor with. It uses the list of high-resolution and low-resolution images, converting them into tensors and taking a random crop of each. A crop size of 96x96 pixels was used. This is done to reduce computational requirements during training as well as improve localized upscaling.
 
 #### Cell(s) 8
-Instanciates ImageDataset 
+Instantiates ImageDataset 
 
 #### Cell(s) 9
+Plots the high and low resolution image found in the training dataset.
+
+#### Cell(s) 10
+From the high resolution directory, plots the original image.
+
+#### Cell(s) 11
+Confirming the crop was indeed from this original image. 
+
+#### Cell(s) 12
 ##### ResidualBlock class
 This class is used to represent the Residual Block architecture described in the papaer. The structure described is k3n64s1
 
-#### Cell(s) 10
+#### Cell(s) 13
 ##### UpsamplingBlock class
 This class is used to represent the Upsampling Block architecture described in the paper. The structure is k3n256s1.
 
-#### Cell(s) 11
+#### Cell(s) 14
 ##### Generator class
 This class is used to represent the Generator architecture described in the paper.
 
-#### Cell(s) 12
+#### Cell(s) 15
 ##### Discriminator class
 This class is used to represent the Discriminator architecture described in the paper.
 
-#### Cell(s) 13
+#### Cell(s) 16
 Defines the loss functions used in the training loop. Binary Cross-Entropy (BCE) is used for 'Adversarial Loss'. Mean Square Error (MSE) is used in combination with VGG19 for 'Perceptual Loss.'
 
-#### Cell(s) 14
+#### Cell(s) 17
 This is the training loop. It alternates between training the Generator and Discriminator. The Discriminator learns to distinguish between real high-resolution images and those created by the Generator. The Generator learns to create images that appear to be real to the Discriminator. The Generator's loss is measured with MSE and VGG19 feature maps. The result is that the generator slowly learns to create more realistic images.
 
-#### Cell(s) 15
+#### Cell(s) 18
 Displays a random set of 3 images. Done so we can see how well the Generator can upscale the images.
 
 ## 4. Results
